@@ -1,27 +1,56 @@
-const mobileMenu = document.getElementById('mobile-menu');
-const navbarLinks = document.querySelector('.navbar-links');
-const navbar = document.getElementById('navbar');
-
-mobileMenu.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-});
-
-// Change navbar background color on scroll
+//
+var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-    if (window.scrollY > 50) {
-        navbar.style.backgroundColor = "#111";
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
     } else {
-        navbar.style.backgroundColor = "#666";
+        document.getElementById("navbar").style.top = "-75px";
     }
-};
+    prevScrollpos = currentScrollPos;
+}
 
-// Smooth scrolling for internal links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+// Open & Close Navbar
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+// Slide show manually & automatically
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+function autoSlide() {
+    plusSlides(1);
+}
+
+setInterval(autoSlide, 5000);
