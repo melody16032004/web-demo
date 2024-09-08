@@ -53,7 +53,7 @@ body {
 
 .navbar {
     display: flex;
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     justify-content: space-around;
     align-items: center;
     padding: 10px 0px;
@@ -61,6 +61,14 @@ body {
     z-index: 1000;
     width: 100%;
     transition: top 0.5s;
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, .85));
+}
+
+.navbar img {
+    width: 36.7592225vh;
+    /* position: absolute; */
+    left: 3.0555vh;
+    top: 7.037vh;
 }
 
 .navbar-rightside {
@@ -292,19 +300,45 @@ img {
 
 }
 
-.banner anim-faded {
+/* .banner anim-faded {
     opacity: 1;
     transition: opacity 0.5s ease;
 }
 
 .faded {
     opacity: 0;
-}
+} */
 
 .image-container {
     /* position: relative; */
     width: 100%;
     height: 100%;
+    /* background-size: cover; */
+}
+
+/* .image-container video {
+    margin-top: -60px;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    filter: blur(0px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+} */
+.image-container .background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
 .banner img {
@@ -387,6 +421,21 @@ img {
     transform: translateY(-50%);
     color: white;
     font-size: 62px;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0);
+
+    z-index: 10;
+}
+
+.banner h3 {
+    position: absolute;
+    top: 48%;
+    left: 100px;
+
+
+    transform: translateY(-50%);
+    color: white;
+    font-size: 42px;
     font-family: Arial, sans-serif;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0);
 
