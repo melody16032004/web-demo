@@ -74,9 +74,34 @@
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div> -->
-                <video class="background-video" autoplay loop muted>
-                    <source src="videos/intro.mp4">
-                </video>
+                <div class="left-gradual-mask"></div>
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <video class="background-video" autoplay loop>
+                            <source class="mySlides fade" src="videos/pgr.mp4">
+                        </video>
+                    </div>
+                    <div class="mySlides fade">
+                        <video class="background-video" autoplay loop>
+                            <source class="mySlides fade" src="videos/wuwa.mp4">
+                        </video>
+                    </div>
+                    <div class="mySlides fade">
+                        <video class="background-video" autoplay loop>
+                            <source class="mySlides fade" src="videos/hsr.mp4">
+                        </video>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <div class="dot-indicator">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> -->
+
             </div>
 
             <div class="txt-left">
@@ -88,8 +113,16 @@
                     Oklahoma City.
                 </p>
             </div>
-            <button class="outlined-button">Get Started</button>
+            <a href="https://pgr.kurogame.net" target="_blank">
+                <button class="outlined-button">
+                    Get Started
+                </button>
+            </a>
+        </div>
+        <div class="navigation-wrapper">
+            <div class="navigation-bg">
 
+            </div>
         </div>
 
         <div class="content">
@@ -173,16 +206,6 @@
             </div>
 
         </div>
-        <!-- <div class="wrapper">
-            <div class="box-wrap">
-                <div class="box one"></div>
-                <div class="box two"></div>
-                <div class="box three"></div>
-                <div class="box four"></div>
-                <div class="box five"></div>
-                <div class="box six"></div>
-            </div>
-        </div> -->
     </div>
 
 

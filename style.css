@@ -341,6 +341,16 @@ img {
     pointer-events: none;
 }
 
+.image-container .left-gradual-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vh;
+    height: 100%;
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, .5));
+    pointer-events: none;
+}
+
 .banner img {
     width: 100%;
     height: 100%;
@@ -483,6 +493,27 @@ img {
     background-color: white;
     color: black;
     font-weight: 550;
+}
+
+.navigation-wrapper {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 18.7963vh;
+    left: 2.963vh;
+    z-index: 3;
+}
+
+.navigation-wrapper .navigation-bg[data-v-2003cf0e] {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(//cdnstatic.kurogame.net/h5_manage_dist/pgr_website2.0/assets/navigation-bg.7b96af98.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: translateX(-5%);
+    transition: transform .5s ease-in-out;
+    pointer-events: none;
 }
 
 @media (max-width: 768px) {

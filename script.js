@@ -53,7 +53,7 @@ function autoSlide() {
     plusSlides(1);
 }
 
-setInterval(autoSlide, 5000);
+setInterval(autoSlide, 60000);
 
 //
 // window.addEventListener("scroll", () => {
