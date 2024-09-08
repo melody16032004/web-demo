@@ -1,6 +1,11 @@
 :root {
     --main-color: #eb5757;
     --subtext-color: #797878;
+    --blur-text: #2a2828;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 * {
@@ -40,7 +45,10 @@ body {
     margin: 0;
     font-family: 'Poppins';
 
-
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
 }
 
 .navbar {
@@ -284,6 +292,15 @@ img {
 
 }
 
+.banner anim-faded {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.faded {
+    opacity: 0;
+}
+
 .image-container {
     /* position: relative; */
     width: 100%;
@@ -443,6 +460,7 @@ img {
 
 .footer .top-content-footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 50px 0 10px 0;
 }
@@ -496,10 +514,17 @@ img {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    background-color: var(--blur-text);
+    color: var(--subtext-color);
+    margin-top: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.block-4 button:hover {
     background-color: var(--main-color);
     color: white;
-    margin-top: 10px;
 }
+
 
 .footer img {
     scale: 2.0;
@@ -514,6 +539,7 @@ img {
     height: 70px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -553,12 +579,12 @@ img {
 }
 
 .bottom-bar-footer .toTheTop {
-    position: relative;
+    /* position: relative; */
     width: 50px;
     height: 40px;
 
     left: 50px;
-    bottom: -7px;
+    bottom: -5px;
     justify-content: center;
 }
 

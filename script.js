@@ -54,3 +54,16 @@ function autoSlide() {
 }
 
 setInterval(autoSlide, 5000);
+
+//
+window.addEventListener("scroll", () => {
+    const content = document.querySelector(".anim-faded");
+    const scrollPosition = window.scrollY;
+
+    // Adjust the fade effect based on scroll position
+    if (scrollPosition > 100) {
+        content.classList.add("faded");
+    } else {
+        content.classList.remove("faded");
+    }
+});

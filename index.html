@@ -6,167 +6,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="J&S.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="navbar" id="navbar">
-        <div class="logo-site">
-            <img src="images/logo.svg">
-        </div>
-        <div class="navbar-rightside">
-            <ul class="navbar-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Donate</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-
-            <!-- <div class="cart">
+    <!-- <div class="cart">
                 <i class="fas fa-shopping-cart"></i>
                 <div class="badge">3</div>
             </div> -->
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Service</a>
-                    <a href="#">Donate</a>
-                    <a href="#">Contact</a>
-                </div>
+    <div class="loading">
+        <div class="navbar" id="navbar">
+            <div class="logo-site">
+                <img src="images/logo.svg">
             </div>
-            <div class="menu-toggle" onclick="openNav()">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </div>
-    <div class="banner">
-        <div class="image-container">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="https://cdn.prod.website-files.com/66d87702b7584fc4e997cceb/66d87702b7584fc4e997cd76_wu-jianxiong-UniC8xhlzaE-unsplash.jpg"
-                        style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="https://cdn.prod.website-files.com/66d87702b7584fc4e997cceb/66d87702b7584fc4e997cd86_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg"
-                        style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="https://cdn.prod.website-files.com/66d87702b7584fc4e997cceb/66d87702b7584fc4e997cd8d_felix-rostig-UmV2wr-Vbq8-unsplash.jpg"
-                        style="width:100%">
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-            </div>
-
-            <div class="dot-indicator">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-
-        </div>
-
-        <div class="txt-left">
-            <h1>
-                Serving you <br> since 1989.
-            </h1>
-            <p>
-                Acme Outdoors is an outdoor and adventure <br>
-                shop located in the Boathouse District in <br>
-                Oklahoma City.
-            </p>
-        </div>
-        <button class="outlined-button">Get Started</button>
-
-    </div>
-
-    <div class="content">
-        <ul>
-            <li>Content 1</li>
-            <li>Content 2</li>
-            <li>Content 3</li>
-        </ul>
-    </div>
-
-    <div class="footer">
-        <div class="top-content-footer">
-            <div class="block-1">
-                <h2>About Us</h2>
-                <p>Korem ipsum dolor sit amet, consectetur <br>
-                    adipiscing elit. Nunc vulputate libero et <br>
-                    velit interdum, ac aliquet odio mattis.</p>
-            </div>
-
-            <div class="block-2">
-                <h2>Contact Info</h2>
-                <div class="b2">
-                    <div class="address">
-                        <p>Address: cnpmt4@gmail.com</p>
-                        <p></p>
-                    </div>
-                    <div class="phone">
-                        <p>Phone: 0123456789</p>
-                        <p> </p>
-                    </div>
-                    <div class="domain">
-                        <p>info@domain.com</p>
-                    </div>
-                </div>
-
-                <p></p>
-            </div>
-
-            <div class="block-3">
-                <h2>Navigation</h2>
-                <ul>
+            <div class="navbar-rightside">
+                <ul class="navbar-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Shop</a></li>
                     <li><a href="#">Donate</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </div>
 
-            <div class="block-4">
-                <h2>Subscribe newsletter</h2>
-                <p>Subscribe our newsletter to get updates about our <br>
-                    services and offers.</p>
-                <br>
-                <form>
-                    <input type="email" name="email" placeholder="Enter your email">
-                    <button>Subscribe</button>
-                </form>
 
-                <br>
-            </div>
-        </div>
-        <img src="images/logo.svg">
-        <div class="bottom-bar-footer">
-            <div class="copyright">
-                <p>Copyright &copy; 2024 All rights reserved | This website made by </p>
-                <p> <a href="#"> Group Agile</a></p>
-            </div>
-            <div class="social-media">
-                <a href="#" class="fa fa-pinterest"></a>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <div class="toTheTop">
-                    <button>Up</button>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Service</a>
+                        <a href="#">Donate</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="menu-toggle" onclick="openNav()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </div>
+        </div>
+        <div class="banner anim-faded">
+            <div class="image-container">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="https://cdn.prod.website-files.com/66d87702b7584fc4e997cceb/66d87702b7584fc4e997cd76_wu-jianxiong-UniC8xhlzaE-unsplash.jpg"
+                            style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://cdn.prod.website-files.com/66d87702b7584fc4e997cceb/66d87702b7584fc4e997cd86_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg"
+                            style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://cdn.prod.website-files.com/66d87702b7584fc4e997cceb/66d87702b7584fc4e997cd8d_felix-rostig-UmV2wr-Vbq8-unsplash.jpg"
+                            style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+
+                <div class="dot-indicator">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+            </div>
+
+            <div class="txt-left">
+                <h1>
+                    Serving you <br> since 1989.
+                </h1>
+                <p>
+                    Acme Outdoors is an outdoor and adventure <br>
+                    shop located in the Boathouse District in <br>
+                    Oklahoma City.
+                </p>
+            </div>
+            <button class="outlined-button">Get Started</button>
 
         </div>
 
+        <div class="content">
+            <ul>
+                <li>Content 1</li>
+                <li>Content 2</li>
+                <li>Content 3</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <div class="top-content-footer">
+                <div class="block-1">
+                    <h2>About Us</h2>
+                    <p>Korem ipsum dolor sit amet, consectetur <br>
+                        adipiscing elit. Nunc vulputate libero et <br>
+                        velit interdum, ac aliquet odio mattis.</p>
+                </div>
+
+                <div class="block-2">
+                    <h2>Contact Info</h2>
+                    <div class="b2">
+                        <div class="address">
+                            <p>Address: cnpmt4@gmail.com</p>
+                            <p></p>
+                        </div>
+                        <div class="phone">
+                            <p>Phone: 0123456789</p>
+                            <p> </p>
+                        </div>
+                        <div class="domain">
+                            <p>info@domain.com</p>
+                        </div>
+                    </div>
+
+                    <p></p>
+                </div>
+
+                <div class="block-3">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="block-4">
+                    <h2>Subscribe newsletter</h2>
+                    <p>Subscribe our newsletter to get updates about our <br>
+                        services and offers.</p>
+                    <br>
+                    <form>
+                        <input type="email" name="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </form>
+
+                    <br>
+                </div>
+            </div>
+            <img src="images/logo.svg">
+            <div class="bottom-bar-footer">
+                <div class="copyright">
+                    <p>Copyright &copy; 2024 All rights reserved | This website made by </p>
+                    <p> <a href="#"> Group Agile</a></p>
+                </div>
+                <div class="social-media">
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <div class="toTheTop">
+                        <button id="moveToTop">Up</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- <div class="wrapper">
+            <div class="box-wrap">
+                <div class="box one"></div>
+                <div class="box two"></div>
+                <div class="box three"></div>
+                <div class="box four"></div>
+                <div class="box five"></div>
+                <div class="box six"></div>
+            </div>
+        </div> -->
     </div>
+
+
 
     <script src="script.js"></script>
 </body>
